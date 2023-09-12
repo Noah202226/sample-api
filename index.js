@@ -8,7 +8,7 @@ const app = express();
 
 // Middlewares
 app.use(express.json());
-app.use(express.cors(cors));
+app.use(express.cors());
 
 // Routes
 app.get("/outfit", (req, res) => {
