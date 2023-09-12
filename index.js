@@ -6,10 +6,6 @@ const { v4: uuid } = require("uuid");
 
 const app = express();
 
-// Middlewares
-app.use(express.json());
-app.use(express.cors());
-
 // Routes
 app.get("/outfit", (req, res) => {
   const tops = ["Black", "White", "Orange", "Navy"];
